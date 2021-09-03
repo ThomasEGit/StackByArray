@@ -1,8 +1,7 @@
 #ifndef STACKBYARRAY_H
 #define STACKBYARRAY_H
 #include <iostream>
-
-using namespace std; //change here too
+using namespace std;
 
 class StackByArray
 {
