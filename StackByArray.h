@@ -2,7 +2,7 @@
 #define STACKBYARRAY_H
 #include <iostream>
 
-using namespace std;
+using namespace std; //change here too
 
 class StackByArray
 {
