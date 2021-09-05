@@ -6,7 +6,7 @@ using namespace std;
 class StackByArray
 {
 private:
-	int stackArray[10];
+	int stackArray[20];
 	int top;
 public:
 	StackByArray();
