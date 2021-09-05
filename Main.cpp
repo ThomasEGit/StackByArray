@@ -4,6 +4,11 @@ using namespace std;
 
 int main()
 {
-	cout << "hello" << endl;
+	StackByArray t;
+	t.push(5);
+	cout << t.peak() << endl;
+	t.pop();
+	cout << t.peak() << endl;
+	t.pop();
 	return 0;
 }

@@ -14,16 +14,31 @@ bool StackByArray::isEmpty() const
 
 void StackByArray::push(int input)
 {
-	++top;
+	if (top == 9)
+	{
+		cout << "Stack is full" << endl;
+		return;
+	}
+	top++;
 	stackArray[top] = input;
 }
 
 void StackByArray::pop()
 {
-
+	if (top < 0)
+	{
+		cout << "Stack is empty" << endl;
+		return;
+	}
+	top--;
 }
 
 int StackByArray::peak()
 {
-	return top;
+	if (top < 0)
+	{
+		cout << "Nothing to peak since emtpy" << endl;
+		return -1;
+	}
+	return stackArray[top];
 }
